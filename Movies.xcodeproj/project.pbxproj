@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MoviesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MoviesAppDelegate.m */; };
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		CD0531800D9AED910075C9BD /* MovieThoughtsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05317F0D9AED910075C9BD /* MovieThoughtsController.m */; };
+		CD1368450D83721700F6D780 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1367FF0D836E2100F6D780 /* RootViewController.m */; };
+		CD1D9CD50D85FB4600A15439 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1D9CD40D85FB4600A15439 /* Default.png */; };
+		CD1D9CD90D85FB7500A15439 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD1D9CD80D85FB7500A15439 /* Icon.png */; };
+		CD1D9D420D85FFB500A15439 /* OwnedController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1D9D410D85FFB500A15439 /* OwnedController.m */; };
+		CD29DEC40D8A020B00956E34 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD29DEC30D8A020B00956E34 /* libsqlite3.dylib */; };
+		CD2C18840D843DA700810CC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2C18830D843DA700810CC2 /* DetailViewController.m */; };
+		CD332B040D8EF04500DDAE28 /* NSStringSyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD332B030D8EF04500DDAE28 /* NSStringSyncAdditions.m */; };
+		CD53FCDA0D8C39B40010F01F /* Settings.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD53FCCE0D8C39780010F01F /* Settings.bundle */; };
+		CD53FCF50D8C430A0010F01F /* SyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD53FCF40D8C430A0010F01F /* SyncController.m */; };
+		CD59C2F50D87F5FC00F38356 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59C2F40D87F5FC00F38356 /* Movie.m */; };
+		CD6260CB0D89A7D300E2CCEF /* MovieListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6260CA0D89A7D300E2CCEF /* MovieListCell.m */; };
+		CD6261030D89ABD800E2CCEF /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6261020D89ABD800E2CCEF /* MovieViewController.m */; };
+		CD6262300D89C83600E2CCEF /* MovieViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62622F0D89C83600E2CCEF /* MovieViewCell.m */; };
+		CD69F9990E54EFF500BC6DAE /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD69F9980E54EFF500BC6DAE /* dist.plist */; };
+		CD7840730D8C7070008D9D6D /* PasswordEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7840720D8C7070008D9D6D /* PasswordEntryController.m */; };
+		CD78418D0D8DDBF2008D9D6D /* KeychainBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */; };
+		CD7841950D8DDCE1008D9D6D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7841940D8DDCE1008D9D6D /* Security.framework */; };
+		CD957B3C0D870CF0005E8A40 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957B3B0D870CF0005E8A40 /* MovieListViewController.m */; };
+		CD957B770D870F62005E8A40 /* dvd1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957B730D870F62005E8A40 /* dvd1.png */; };
+		CD957B780D870F62005E8A40 /* dvd4.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957B740D870F62005E8A40 /* dvd4.png */; };
+		CD957B790D870F62005E8A40 /* bluray.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957B750D870F62005E8A40 /* bluray.png */; };
+		CD957B7A0D870F62005E8A40 /* dvd2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957B760D870F62005E8A40 /* dvd2.png */; };
+		CD957BAF0D874219005E8A40 /* LeftIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957BAE0D874219005E8A40 /* LeftIconCell.m */; };
+		CD957BF40D874809005E8A40 /* nothing.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957BF30D874809005E8A40 /* nothing.png */; };
+		CD957C210D874D68005E8A40 /* all.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957C200D874D68005E8A40 /* all.png */; };
+		CD957C6E0D875FDC005E8A40 /* XMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C5E0D875FDC005E8A40 /* XMLDocument.m */; };
+		CD957C6F0D875FDC005E8A40 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C600D875FDC005E8A40 /* XMLElement.m */; };
+		CD957C710D875FDC005E8A40 /* XMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C650D875FDC005E8A40 /* XMLNode.m */; };
+		CD957C730D875FDC005E8A40 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C690D875FDC005E8A40 /* XMLReader.m */; };
+		CD957C740D875FDC005E8A40 /* XMLReaderSAX.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C6B0D875FDC005E8A40 /* XMLReaderSAX.m */; };
+		CD957C750D875FDC005E8A40 /* XMLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C6D0D875FDC005E8A40 /* XMLUtilities.m */; };
+		CD957C870D8760E8005E8A40 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD957C860D8760E8005E8A40 /* libxml2.2.dylib */; };
+		CD957CAA0D876299005E8A40 /* Fallback.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD957CA90D876299005E8A40 /* Fallback.xml */; };
+		CDA25CCF0F78C67000D148A3 /* Adhoc.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA25CCE0F78C67000D148A3 /* Adhoc.plist */; };
+		CDB786660D8A817D00446A4C /* PersistStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB786650D8A817D00446A4C /* PersistStore.m */; };
+		CDD407610D94925D000AB92D /* UIViewControllerMoviesAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD407600D94925D000AB92D /* UIViewControllerMoviesAdditions.m */; };
+		CDE44DE00D8B1C2100AD527C /* SQLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE44DDC0D8B1C2100AD527C /* SQLDatabase.m */; };
+		CDE44DE10D8B1C2100AD527C /* SQLRow.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE44DDD0D8B1C2100AD527C /* SQLRow.m */; };
+		CDE44DE20D8B1C2100AD527C /* SQLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE44DDF0D8B1C2100AD527C /* SQLResult.m */; };
+		CDE44DE40D8B1C2D00AD527C /* SQLDatabase-License.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CDE44DE30D8B1C2D00AD527C /* SQLDatabase-License.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD53FCDC0D8C39BC0010F01F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+				CD53FCDA0D8C39B40010F01F /* Settings.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MoviesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MoviesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesAppDelegate.m; sourceTree = "<group>"; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Blargh_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blargh_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		CD05317E0D9AED910075C9BD /* MovieThoughtsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieThoughtsController.h; sourceTree = "<group>"; };
+		CD05317F0D9AED910075C9BD /* MovieThoughtsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieThoughtsController.m; sourceTree = "<group>"; };
+		CD1367FE0D836E2100F6D780 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CD1367FF0D836E2100F6D780 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CD1D9CD40D85FB4600A15439 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CD1D9CD80D85FB7500A15439 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CD1D9D400D85FFB500A15439 /* OwnedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnedController.h; sourceTree = "<group>"; };
+		CD1D9D410D85FFB500A15439 /* OwnedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnedController.m; sourceTree = "<group>"; };
+		CD29DE4E0D89DDEF00956E34 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CD29DEC30D8A020B00956E34 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD2C18820D843DA700810CC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CD2C18830D843DA700810CC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CD332B020D8EF04500DDAE28 /* NSStringSyncAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringSyncAdditions.h; sourceTree = "<group>"; };
+		CD332B030D8EF04500DDAE28 /* NSStringSyncAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringSyncAdditions.m; sourceTree = "<group>"; };
+		CD53FCCE0D8C39780010F01F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CD53FCF30D8C430A0010F01F /* SyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncController.h; sourceTree = "<group>"; };
+		CD53FCF40D8C430A0010F01F /* SyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncController.m; sourceTree = "<group>"; };
+		CD59C2F30D87F5FC00F38356 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		CD59C2F40D87F5FC00F38356 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		CD6260C90D89A7D300E2CCEF /* MovieListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListCell.h; sourceTree = "<group>"; };
+		CD6260CA0D89A7D300E2CCEF /* MovieListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListCell.m; sourceTree = "<group>"; };
+		CD6261010D89ABD800E2CCEF /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		CD6261020D89ABD800E2CCEF /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		CD62622E0D89C83600E2CCEF /* MovieViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewCell.h; sourceTree = "<group>"; };
+		CD62622F0D89C83600E2CCEF /* MovieViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewCell.m; sourceTree = "<group>"; };
+		CD69F9980E54EFF500BC6DAE /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
+		CD7840710D8C7070008D9D6D /* PasswordEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordEntryController.h; sourceTree = "<group>"; };
+		CD7840720D8C7070008D9D6D /* PasswordEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordEntryController.m; sourceTree = "<group>"; };
+		CD78418B0D8DDBF2008D9D6D /* KeychainBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainBridge.h; sourceTree = "<group>"; };
+		CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainBridge.m; sourceTree = "<group>"; };
+		CD7841940D8DDCE1008D9D6D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CD957B3A0D870CF0005E8A40 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		CD957B3B0D870CF0005E8A40 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		CD957B730D870F62005E8A40 /* dvd1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd1.png; sourceTree = "<group>"; };
+		CD957B740D870F62005E8A40 /* dvd4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd4.png; sourceTree = "<group>"; };
+		CD957B750D870F62005E8A40 /* bluray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluray.png; sourceTree = "<group>"; };
+		CD957B760D870F62005E8A40 /* dvd2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd2.png; sourceTree = "<group>"; };
+		CD957BAD0D874219005E8A40 /* LeftIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftIconCell.h; sourceTree = "<group>"; };
+		CD957BAE0D874219005E8A40 /* LeftIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftIconCell.m; sourceTree = "<group>"; };
+		CD957BF30D874809005E8A40 /* nothing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nothing.png; sourceTree = "<group>"; };
+		CD957C200D874D68005E8A40 /* all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all.png; sourceTree = "<group>"; };
+		CD957C5D0D875FDC005E8A40 /* XMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDocument.h; sourceTree = "<group>"; };
+		CD957C5E0D875FDC005E8A40 /* XMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDocument.m; sourceTree = "<group>"; };
+		CD957C5F0D875FDC005E8A40 /* XMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLElement.h; sourceTree = "<group>"; };
+		CD957C600D875FDC005E8A40 /* XMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLElement.m; sourceTree = "<group>"; };
+		CD957C610D875FDC005E8A40 /* XMLModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLModelObject.h; sourceTree = "<group>"; };
+		CD957C640D875FDC005E8A40 /* XMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLNode.h; sourceTree = "<group>"; };
+		CD957C650D875FDC005E8A40 /* XMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLNode.m; sourceTree = "<group>"; };
+		CD957C680D875FDC005E8A40 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		CD957C690D875FDC005E8A40 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		CD957C6A0D875FDC005E8A40 /* XMLReaderSAX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReaderSAX.h; sourceTree = "<group>"; };
+		CD957C6B0D875FDC005E8A40 /* XMLReaderSAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReaderSAX.m; sourceTree = "<group>"; };
+		CD957C6C0D875FDC005E8A40 /* XMLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLUtilities.h; sourceTree = "<group>"; };
+		CD957C6D0D875FDC005E8A40 /* XMLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLUtilities.m; sourceTree = "<group>"; };
+		CD957C860D8760E8005E8A40 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CD957CA90D876299005E8A40 /* Fallback.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fallback.xml; sourceTree = "<group>"; };
+		CDA25CCE0F78C67000D148A3 /* Adhoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Adhoc.plist; sourceTree = "<group>"; };
+		CDB786640D8A817D00446A4C /* PersistStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistStore.h; sourceTree = "<group>"; };
+		CDB786650D8A817D00446A4C /* PersistStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistStore.m; sourceTree = "<group>"; };
+		CDD4075F0D94925D000AB92D /* UIViewControllerMoviesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerMoviesAdditions.h; sourceTree = "<group>"; };
+		CDD407600D94925D000AB92D /* UIViewControllerMoviesAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerMoviesAdditions.m; sourceTree = "<group>"; };
+		CDE44DDB0D8B1C2100AD527C /* SQLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLDatabase.h; sourceTree = "<group>"; };
+		CDE44DDC0D8B1C2100AD527C /* SQLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLDatabase.m; sourceTree = "<group>"; };
+		CDE44DDD0D8B1C2100AD527C /* SQLRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLRow.m; sourceTree = "<group>"; };
+		CDE44DDE0D8B1C2100AD527C /* SQLDatabasePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLDatabasePrivate.h; sourceTree = "<group>"; };
+		CDE44DDF0D8B1C2100AD527C /* SQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLResult.m; sourceTree = "<group>"; };
+		CDE44DE30D8B1C2D00AD527C /* SQLDatabase-License.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SQLDatabase-License.pdf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				CD957C870D8760E8005E8A40 /* libxml2.2.dylib in Frameworks */,
+				CD29DEC40D8A020B00956E34 /* libsqlite3.dylib in Frameworks */,
+				CD7841950D8DDCE1008D9D6D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD332B1E0D8EF11100DDAE28 /* Categories */,
+				CD53FCFA0D8C44300010F01F /* Application */,
+				CD59C2F20D87F5E200F38356 /* Models */,
+				CD59C2E00D87F55200F38356 /* ViewControllers */,
+				CD957BAB0D8741E5005E8A40 /* UITableViewCells */,
+				CDE44DDA0D8B1B7400AD527C /* SQLDatabase */,
+				CD957C5C0D875FDC005E8A40 /* XML */,
+				CD59C2E10D87F56700F38356 /* Unused */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD7841940D8DDCE1008D9D6D /* Security.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Movies.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				CD69F9980E54EFF500BC6DAE /* dist.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Blargh_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD53FCCE0D8C39780010F01F /* Settings.bundle */,
+				CDE44DE30D8B1C2D00AD527C /* SQLDatabase-License.pdf */,
+				CD957B7B0D870F9B005E8A40 /* Images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				CD957CA90D876299005E8A40 /* Fallback.xml */,
+				CDA25CCE0F78C67000D148A3 /* Adhoc.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD957C860D8760E8005E8A40 /* libxml2.2.dylib */,
+				CD29DEC30D8A020B00956E34 /* libsqlite3.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD332B1E0D8EF11100DDAE28 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CD332B020D8EF04500DDAE28 /* NSStringSyncAdditions.h */,
+				CD332B030D8EF04500DDAE28 /* NSStringSyncAdditions.m */,
+				CDD4075F0D94925D000AB92D /* UIViewControllerMoviesAdditions.h */,
+				CDD407600D94925D000AB92D /* UIViewControllerMoviesAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CD53FCFA0D8C44300010F01F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MoviesAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MoviesAppDelegate.m */,
+				CD29DE4E0D89DDEF00956E34 /* Constants.h */,
+				CDB786640D8A817D00446A4C /* PersistStore.h */,
+				CDB786650D8A817D00446A4C /* PersistStore.m */,
+				CD53FCF30D8C430A0010F01F /* SyncController.h */,
+				CD53FCF40D8C430A0010F01F /* SyncController.m */,
+				CD78418B0D8DDBF2008D9D6D /* KeychainBridge.h */,
+				CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CD59C2E00D87F55200F38356 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD1367FE0D836E2100F6D780 /* RootViewController.h */,
+				CD1367FF0D836E2100F6D780 /* RootViewController.m */,
+				CD1D9D400D85FFB500A15439 /* OwnedController.h */,
+				CD1D9D410D85FFB500A15439 /* OwnedController.m */,
+				CD957B3A0D870CF0005E8A40 /* MovieListViewController.h */,
+				CD957B3B0D870CF0005E8A40 /* MovieListViewController.m */,
+				CD6261010D89ABD800E2CCEF /* MovieViewController.h */,
+				CD6261020D89ABD800E2CCEF /* MovieViewController.m */,
+				CD7840710D8C7070008D9D6D /* PasswordEntryController.h */,
+				CD7840720D8C7070008D9D6D /* PasswordEntryController.m */,
+				CD05317E0D9AED910075C9BD /* MovieThoughtsController.h */,
+				CD05317F0D9AED910075C9BD /* MovieThoughtsController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD59C2E10D87F56700F38356 /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C18820D843DA700810CC2 /* DetailViewController.h */,
+				CD2C18830D843DA700810CC2 /* DetailViewController.m */,
+			);
+			name = Unused;
+			sourceTree = "<group>";
+		};
+		CD59C2F20D87F5E200F38356 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD59C2F30D87F5FC00F38356 /* Movie.h */,
+				CD59C2F40D87F5FC00F38356 /* Movie.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CD957B7B0D870F9B005E8A40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CD957C200D874D68005E8A40 /* all.png */,
+				CD957BF30D874809005E8A40 /* nothing.png */,
+				CD957B730D870F62005E8A40 /* dvd1.png */,
+				CD957B740D870F62005E8A40 /* dvd4.png */,
+				CD957B750D870F62005E8A40 /* bluray.png */,
+				CD957B760D870F62005E8A40 /* dvd2.png */,
+				CD1D9CD80D85FB7500A15439 /* Icon.png */,
+				CD1D9CD40D85FB4600A15439 /* Default.png */,
+			);
+			name = Images;
+			path = ../Images;
+			sourceTree = "<group>";
+		};
+		CD957BAB0D8741E5005E8A40 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CD957BAD0D874219005E8A40 /* LeftIconCell.h */,
+				CD957BAE0D874219005E8A40 /* LeftIconCell.m */,
+				CD6260C90D89A7D300E2CCEF /* MovieListCell.h */,
+				CD6260CA0D89A7D300E2CCEF /* MovieListCell.m */,
+				CD62622E0D89C83600E2CCEF /* MovieViewCell.h */,
+				CD62622F0D89C83600E2CCEF /* MovieViewCell.m */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		CD957C5C0D875FDC005E8A40 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				CD957C5D0D875FDC005E8A40 /* XMLDocument.h */,
+				CD957C5E0D875FDC005E8A40 /* XMLDocument.m */,
+				CD957C5F0D875FDC005E8A40 /* XMLElement.h */,
+				CD957C600D875FDC005E8A40 /* XMLElement.m */,
+				CD957C610D875FDC005E8A40 /* XMLModelObject.h */,
+				CD957C640D875FDC005E8A40 /* XMLNode.h */,
+				CD957C650D875FDC005E8A40 /* XMLNode.m */,
+				CD957C680D875FDC005E8A40 /* XMLReader.h */,
+				CD957C690D875FDC005E8A40 /* XMLReader.m */,
+				CD957C6A0D875FDC005E8A40 /* XMLReaderSAX.h */,
+				CD957C6B0D875FDC005E8A40 /* XMLReaderSAX.m */,
+				CD957C6C0D875FDC005E8A40 /* XMLUtilities.h */,
+				CD957C6D0D875FDC005E8A40 /* XMLUtilities.m */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		CDE44DDA0D8B1B7400AD527C /* SQLDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				CDE44DDB0D8B1C2100AD527C /* SQLDatabase.h */,
+				CDE44DDC0D8B1C2100AD527C /* SQLDatabase.m */,
+				CDE44DDD0D8B1C2100AD527C /* SQLRow.m */,
+				CDE44DDE0D8B1C2100AD527C /* SQLDatabasePrivate.h */,
+				CDE44DDF0D8B1C2100AD527C /* SQLResult.m */,
+			);
+			name = SQLDatabase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Movies" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				CD53FCDC0D8C39BC0010F01F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movies;
+			productName = Blargh;
+			productReference = 1D6058910D05DD3D006BFB54 /* Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Movies" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Movies */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1D9CD50D85FB4600A15439 /* Default.png in Resources */,
+				CD1D9CD90D85FB7500A15439 /* Icon.png in Resources */,
+				CD957B770D870F62005E8A40 /* dvd1.png in Resources */,
+				CD957B780D870F62005E8A40 /* dvd4.png in Resources */,
+				CD957B790D870F62005E8A40 /* bluray.png in Resources */,
+				CD957B7A0D870F62005E8A40 /* dvd2.png in Resources */,
+				CD957BF40D874809005E8A40 /* nothing.png in Resources */,
+				CD957C210D874D68005E8A40 /* all.png in Resources */,
+				CD957CAA0D876299005E8A40 /* Fallback.xml in Resources */,
+				CDE44DE40D8B1C2D00AD527C /* SQLDatabase-License.pdf in Resources */,
+				CD69F9990E54EFF500BC6DAE /* dist.plist in Resources */,
+				CDA25CCF0F78C67000D148A3 /* Adhoc.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C18840D843DA700810CC2 /* DetailViewController.m in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				CD1368450D83721700F6D780 /* RootViewController.m in Sources */,
+				1D3623260D0F684500981E51 /* MoviesAppDelegate.m in Sources */,
+				CD1D9D420D85FFB500A15439 /* OwnedController.m in Sources */,
+				CD957B3C0D870CF0005E8A40 /* MovieListViewController.m in Sources */,
+				CD957BAF0D874219005E8A40 /* LeftIconCell.m in Sources */,
+				CD957C6E0D875FDC005E8A40 /* XMLDocument.m in Sources */,
+				CD957C6F0D875FDC005E8A40 /* XMLElement.m in Sources */,
+				CD957C710D875FDC005E8A40 /* XMLNode.m in Sources */,
+				CD957C730D875FDC005E8A40 /* XMLReader.m in Sources */,
+				CD957C740D875FDC005E8A40 /* XMLReaderSAX.m in Sources */,
+				CD957C750D875FDC005E8A40 /* XMLUtilities.m in Sources */,
+				CD59C2F50D87F5FC00F38356 /* Movie.m in Sources */,
+				CD6260CB0D89A7D300E2CCEF /* MovieListCell.m in Sources */,
+				CD6261030D89ABD800E2CCEF /* MovieViewController.m in Sources */,
+				CD6262300D89C83600E2CCEF /* MovieViewCell.m in Sources */,
+				CDB786660D8A817D00446A4C /* PersistStore.m in Sources */,
+				CDE44DE00D8B1C2100AD527C /* SQLDatabase.m in Sources */,
+				CDE44DE10D8B1C2100AD527C /* SQLRow.m in Sources */,
+				CDE44DE20D8B1C2100AD527C /* SQLResult.m in Sources */,
+				CD53FCF50D8C430A0010F01F /* SyncController.m in Sources */,
+				CD7840730D8C7070008D9D6D /* PasswordEntryController.m in Sources */,
+				CD78418D0D8DDBF2008D9D6D /* KeychainBridge.m in Sources */,
+				CD332B040D8EF04500DDAE28 /* NSStringSyncAdditions.m in Sources */,
+				CDD407610D94925D000AB92D /* UIViewControllerMoviesAdditions.m in Sources */,
+				CD0531800D9AED910075C9BD /* MovieThoughtsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Blargh_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = Movies;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Blargh_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = Movies;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick F Quinn-Graham";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick F Quinn-Graham";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "847E5ABC-A2C6-4536-8F73-483A0F39D944";
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		CDE5D0BD0E54EB490027D12B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Adhoc.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Patrick F Quinn-Graham";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E794E56-5245-4679-9407-AF58C3D73F4D";
+				SDKROOT = iphoneos4.0;
+			};
+			name = Distribution;
+		};
+		CDE5D0BE0E54EB490027D12B /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = dist.plist;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Blargh_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = Info.plist;
+				PREBINDING = NO;
+				PRODUCT_NAME = Movies;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				CDE5D0BE0E54EB490027D12B /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				CDE5D0BD0E54EB490027D12B /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

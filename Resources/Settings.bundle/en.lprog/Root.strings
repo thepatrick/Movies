@@ -1,0 +1,12 @@
+/* 
+   Root.strings
+   Movies
+
+   Created by Patrick Quinn-Graham on 15/03/08.
+   Copyright 2008 __MyCompanyName__. All rights reserved.
+ */
+
+SYNC = "Sync Server"
+SYNCSERVER = "URI"
+SYNCUSER = "User Name"
+SYNCPASSWORD = "Password"

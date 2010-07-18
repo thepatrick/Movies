@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<moviesync version="1.0">
+
+	<movie>
+		<id>1</id>
+		<title>A Movie</title>
+		<score>72</score>
+		<bluray>1</bluray>
+		<dvd1>0</dvd1>
+		<dvd2>0</dvd2>
+		<dvd4>0</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+	<movie>
+		<id>2</id>
+		<title>B Movie</title>
+		<score>68</score>
+		<bluray>0</bluray>
+		<dvd1>1</dvd1>
+		<dvd2>0</dvd2>
+		<dvd4>0</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+	<movie>
+		<id>3</id>
+		<title>C Movie</title>
+		<score>33</score>
+		<bluray>0</bluray>
+		<dvd1>0</dvd1>
+		<dvd2>1</dvd2>
+		<dvd4>0</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+	<movie>
+		<id>4</id>
+		<title>Another Movie</title>
+		<score>84</score>
+		<bluray>1</bluray>
+		<dvd1>0</dvd1>
+		<dvd2>0</dvd2>
+		<dvd4>1</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+	<movie>
+		<id>5</id>
+		<title>The last Movie</title>
+		<score>84</score>
+		<bluray>0</bluray>
+		<dvd1>0</dvd1>
+		<dvd2>0</dvd2>
+		<dvd4>0</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+	<movie>
+		<id>6</id>
+		<title>One More Movie</title>
+		<score>84</score>
+		<bluray>1</bluray>
+		<dvd1>1</dvd1>
+		<dvd2>1</dvd2>
+		<dvd4>1</dvd4>
+		<updatedat>2008-01-01 01:00:00 +0000</updatedat>
+	</movie>
+
+</moviesync>
