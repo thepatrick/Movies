@@ -28,7 +28,6 @@
 		CD6262300D89C83600E2CCEF /* MovieViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62622F0D89C83600E2CCEF /* MovieViewCell.m */; };
 		CD69F9990E54EFF500BC6DAE /* dist.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD69F9980E54EFF500BC6DAE /* dist.plist */; };
 		CD7840730D8C7070008D9D6D /* PasswordEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7840720D8C7070008D9D6D /* PasswordEntryController.m */; };
-		CD78418D0D8DDBF2008D9D6D /* KeychainBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */; };
 		CD7841950D8DDCE1008D9D6D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7841940D8DDCE1008D9D6D /* Security.framework */; };
 		CD957B3C0D870CF0005E8A40 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957B3B0D870CF0005E8A40 /* MovieListViewController.m */; };
 		CD957B770D870F62005E8A40 /* dvd1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD957B730D870F62005E8A40 /* dvd1.png */; };
@@ -106,8 +105,6 @@
 		CD69F9980E54EFF500BC6DAE /* dist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dist.plist; sourceTree = "<group>"; };
 		CD7840710D8C7070008D9D6D /* PasswordEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordEntryController.h; sourceTree = "<group>"; };
 		CD7840720D8C7070008D9D6D /* PasswordEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordEntryController.m; sourceTree = "<group>"; };
-		CD78418B0D8DDBF2008D9D6D /* KeychainBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainBridge.h; sourceTree = "<group>"; };
-		CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainBridge.m; sourceTree = "<group>"; };
 		CD7841940D8DDCE1008D9D6D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CD957B3A0D870CF0005E8A40 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
 		CD957B3B0D870CF0005E8A40 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
@@ -272,8 +269,6 @@
 				CDB786650D8A817D00446A4C /* PersistStore.m */,
 				CD53FCF30D8C430A0010F01F /* SyncController.h */,
 				CD53FCF40D8C430A0010F01F /* SyncController.m */,
-				CD78418B0D8DDBF2008D9D6D /* KeychainBridge.h */,
-				CD78418C0D8DDBF2008D9D6D /* KeychainBridge.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -404,7 +399,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Movies" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,7 +466,6 @@
 				CDE44DE20D8B1C2100AD527C /* SQLResult.m in Sources */,
 				CD53FCF50D8C430A0010F01F /* SyncController.m in Sources */,
 				CD7840730D8C7070008D9D6D /* PasswordEntryController.m in Sources */,
-				CD78418D0D8DDBF2008D9D6D /* KeychainBridge.m in Sources */,
 				CD332B040D8EF04500DDAE28 /* NSStringSyncAdditions.m in Sources */,
 				CDD407610D94925D000AB92D /* UIViewControllerMoviesAdditions.m in Sources */,
 				CD0531800D9AED910075C9BD /* MovieThoughtsController.m in Sources */,
@@ -516,9 +517,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -527,9 +529,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick F Quinn-Graham";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "847E5ABC-A2C6-4536-8F73-483A0F39D944";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Release;
 		};
@@ -539,9 +542,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = Adhoc.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Patrick F Quinn-Graham";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E794E56-5245-4679-9407-AF58C3D73F4D";
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Distribution;
 		};

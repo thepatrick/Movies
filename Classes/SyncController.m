@@ -3,8 +3,28 @@
 //  Movies
 //
 //  Created by Patrick Quinn-Graham on 15/03/08.
-//  Copyright 2008 Patrick Quinn-Graham. All rights reserved.
+//  Copyright (c) 2008-2010 Patrick Quinn-Graham
+//  
+//  Permission is hereby granted, free of charge, to any person obtaining
+//  a copy of this software and associated documentation files (the
+//  "Software"), to deal in the Software without restriction, including
+//  without limitation the rights to use, copy, modify, merge, publish,
+//  distribute, sublicense, and/or sell copies of the Software, and to
+//  permit persons to whom the Software is furnished to do so, subject to
+//  the following conditions:
+//  
+//  The above copyright notice and this permission notice shall be
+//  included in all copies or substantial portions of the Software.
+//  
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+//  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+//  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 
 #import "MoviesAppDelegate.h"
 #import "PersistStore.h"
@@ -14,7 +34,7 @@
 #import "XMLElement.h"
 #import "XMLReaderSAX.h"
 #import "PasswordEntryController.h"
-#import "KeychainBridge.h"
+//#import "KeychainBridge.h"
 #import "NSStringSyncAdditions.h"
 
 
@@ -71,29 +91,29 @@
 
 -(void)passwordWasSet:(id)newPassword
 {
-	if(newPassword == nil) {
-		NSLog(@"They cancelled password set, disable sync for now.");
-		[defaults setBool:NO forKey:@"SyncEnabled"];
-		return;
-	}	
-	
-	NSString *server = [defaults valueForKey:@"SyncServer"];
-	NSString *user = [defaults valueForKey:@"SyncUser"];
-	
-	NSString *keychainUser = [user stringByAppendingFormat:@"@%@", server];
-	
-	if([KeychainBridge checkForExistanceOfKeychainItem:server withItemKind:@"Password" forUsername:keychainUser]) {
-		if(![KeychainBridge modifyKeychainItem:server withItemKind:@"Password" forUsername:keychainUser withNewPassword:newPassword]) {
-			NSLog(@"Failed to modify item... not so good.");		
-		}
-	} else {
-		if(![KeychainBridge addKeychainItem:server withItemKind:@"Password" forUsername:keychainUser withPassword:newPassword]) {
-			NSLog(@"Failed to add item... not so good.");
-		}
-	}
-	
-	[self performSelectorOnMainThread:@selector(sync) withObject:nil waitUntilDone:NO];
-	
+//	if(newPassword == nil) {
+//		NSLog(@"They cancelled password set, disable sync for now.");
+//		[defaults setBool:NO forKey:@"SyncEnabled"];
+//		return;
+//	}	
+//	
+//	NSString *server = [defaults valueForKey:@"SyncServer"];
+//	NSString *user = [defaults valueForKey:@"SyncUser"];
+//	
+//	NSString *keychainUser = [user stringByAppendingFormat:@"@%@", server];
+//	
+//	if([KeychainBridge checkForExistanceOfKeychainItem:server withItemKind:@"Password" forUsername:keychainUser]) {
+//		if(![KeychainBridge modifyKeychainItem:server withItemKind:@"Password" forUsername:keychainUser withNewPassword:newPassword]) {
+//			NSLog(@"Failed to modify item... not so good.");		
+//		}
+//	} else {
+//		if(![KeychainBridge addKeychainItem:server withItemKind:@"Password" forUsername:keychainUser withPassword:newPassword]) {
+//			NSLog(@"Failed to add item... not so good.");
+//		}
+//	}
+//	
+//	[self performSelectorOnMainThread:@selector(sync) withObject:nil waitUntilDone:NO];
+//	
 }
 
 -(void)showPasswordEntryWithMessage:(NSString*)message
@@ -221,9 +241,9 @@
 	
 	self->syncTask = [app beginBackgroundTaskWithExpirationHandler:^{
 		dispatch_async(dispatch_get_main_queue(), ^{
-			if(self->syncTask != UIInvalidBackgroundTask) {
+			if(self->syncTask != UIBackgroundTaskInvalid) {
 				[app endBackgroundTask:syncTask];
-				self->syncTask = UIInvalidBackgroundTask;
+				self->syncTask = UIBackgroundTaskInvalid;
 			}
 		});
 	}];
@@ -383,9 +403,9 @@
    [pool release];
 	
 	dispatch_async(dispatch_get_main_queue(), ^{
-		if(self->syncTask != UIInvalidBackgroundTask) {
+		if(self->syncTask != UIBackgroundTaskInvalid) {
 			[app endBackgroundTask:self->syncTask];
-			self->syncTask = UIInvalidBackgroundTask;
+			self->syncTask = UIBackgroundTaskInvalid;
 		}
 	});
 	

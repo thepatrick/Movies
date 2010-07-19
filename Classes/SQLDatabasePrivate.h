@@ -3,7 +3,7 @@
 //  SQLite Test
 //
 //  Created by Dustin Mierau on Tue Apr 02 2002.
-//  Copyright (c) 2001 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2002 Blackhole Media, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
