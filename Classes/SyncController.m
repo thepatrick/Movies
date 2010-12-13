@@ -259,10 +259,14 @@
 	NSString *authSuffix = [NSString stringWithFormat:@"user=%@&pass=%@", [user urlencode], [thePassword urlencode]];
 	NSString *serverPath = [NSString stringWithFormat:@"http%@://%@/movies/", (serverUsesSSL ? @"s":@""), server];	
 	NSString *authCheckURL = [NSString stringWithFormat:@"%@sync_auth_check?%@", serverPath, authSuffix];	
-	NSString *authCheck = [NSString stringWithContentsOfURL:[NSURL URLWithString:authCheckURL] encoding:NSUTF8StringEncoding error:nil];
+	NSError *err;
+	NSString *authCheck = [NSString stringWithContentsOfURL:[NSURL URLWithString:authCheckURL] encoding:NSUTF8StringEncoding error:&err];
+	
 	if(authCheck == nil) {
 		[self changeOverlayToError:@"Server unreachable." andThenHide:YES];
-		if(syncLogging) NSLog(@"Server unreachable.");
+		if(syncLogging) {
+			NSLog(@"Server unreachable, url was %@, err: %@", authCheckURL, err);
+		}
 		return; // server unavailable, probably.
 	}
 

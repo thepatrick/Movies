@@ -81,7 +81,7 @@
 	
 	NSLog(@"tableView:... %@", detailItem);
 	// Set the value in the cell
-	cell.text = [detailItem objectForKey:@"URL"];
+	cell.textLabel.text = [detailItem objectForKey:@"URL"];
 	return cell;
 
 }

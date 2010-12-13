@@ -194,9 +194,9 @@ static NSDictionary *getElementAttributes(xmlNode *node);
 - (NSArray *)descendants
 {
     NSMutableArray *descendants = [NSMutableArray array];
-    NSArray *children = [self children];
+    NSArray *mychildren = [self children];
     
-    for (XMLNode *nextChild in children) {
+    for (XMLNode *nextChild in mychildren) {
     
         [descendants addObject:nextChild];
         if (nextChild.isElementNode) {
@@ -215,9 +215,9 @@ static NSDictionary *getElementAttributes(xmlNode *node);
 {
     // Given this XML: @"<?xml version=\"1.0\" encoding=\"UTF-8\"?><document><title>A Title.</title><chapter></section><section><para/></section></chapter></document>";
     // If the title element is the context node, nextNode should return its child, which is the text node 'A Title.'
-    XMLNode *firstChild = [self firstChild];
-    if (firstChild) {
-        return firstChild;
+    XMLNode *myFirstChild = [self firstChild];
+    if (myFirstChild) {
+        return myFirstChild;
     }
     return [self nextSibling];
 }
@@ -299,13 +299,13 @@ static NSDictionary *getElementAttributes(xmlNode *node);
 		if (colonRange.location != NSNotFound) {
 			prefix = [elementName substringToIndex:colonRange.location];
 			
-			const xmlChar *namespacePrefix = (xmlChar *)[prefix cStringUsingEncoding:NSUTF8StringEncoding];
+			const xmlChar *myNamespacePrefix = (xmlChar *)[prefix cStringUsingEncoding:NSUTF8StringEncoding];
 			
 			// When performing a query for a qualified element name such as geo:lat, libxml
 			// requires you to register the namespace. We do so here and pass an empty string
 			// as the URL that defines the namespace prefix because there's no way to know
 			// what it is given the current API.
-			if(xmlXPathRegisterNs(_XPathContext, namespacePrefix, (xmlChar*)"") != 0) {
+			if(xmlXPathRegisterNs(_XPathContext, myNamespacePrefix, (xmlChar*)"") != 0) {
 			
 				#ifdef ASPEN_SIMULATOR
 				// Logging is useful when running the simulator but inappropriate when running on the device.
@@ -449,17 +449,17 @@ static NSDictionary *getElementAttributes(xmlNode *node)
 #pragma mark -
 
 // Return an attribute in the element whose name matches the argument. 
-- (NSString *)attributeNamed:(NSString *)name
+- (NSString *)attributeNamed:(NSString *)myName
 {
-    NSAssert(name != nil, @"-[XMLElement attributeNamed:] 'name' argument is nil.");
+    NSAssert(myName != nil, @"-[XMLElement attributeNamed:] 'name' argument is nil.");
     
-    return [self.attributes objectForKey:name];
+    return [self.attributes objectForKey:myName];
 }
 
 // Private method that returns the libxml attribute for the given name.
-- (xmlAttr *)_getRawAttributeForName:(NSString *)name
+- (xmlAttr *)_getRawAttributeForName:(NSString *)myName
 {    
-    xmlAttr *attribute = xmlHasProp(self.libXMLNode, [name xmlChar]);
+    xmlAttr *attribute = xmlHasProp(self.libXMLNode, [myName xmlChar]);
         
     return attribute;
 }
@@ -499,9 +499,9 @@ static NSDictionary *getElementAttributes(xmlNode *node)
 // Returns a string representation of the receiver's attributes and their values.
 - (NSString *)attributesString
 {
-    NSMutableString *attributesString = [NSMutableString string];
+    NSMutableString *myAttributesString = [NSMutableString string];
     for (NSString *attribute in self.attributes) {
-        [attributesString appendFormat:@"%@=\"%@\"", attribute, [self.attributes valueForKey:attribute]];
+        [myAttributesString appendFormat:@"%@=\"%@\"", attribute, [self.attributes valueForKey:attribute]];
     }
     return attributesString;
 }
@@ -513,9 +513,9 @@ static NSDictionary *getElementAttributes(xmlNode *node)
 // Look at the receiver's children and merge consecutive text nodes into a single node.
 - (void)consolidateConsecutiveTextNodes
 {    
-    NSArray *children = self.children;
+    NSArray *myChildren = self.children;
     
-    for (XMLNode *child in children) {
+    for (XMLNode *child in myChildren) {
         
         XMLNode *nextSibling = child.nextSibling;
         if (!nextSibling) {

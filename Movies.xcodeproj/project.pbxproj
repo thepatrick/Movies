@@ -45,7 +45,35 @@
 		CD957C750D875FDC005E8A40 /* XMLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CD957C6D0D875FDC005E8A40 /* XMLUtilities.m */; };
 		CD957C870D8760E8005E8A40 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD957C860D8760E8005E8A40 /* libxml2.2.dylib */; };
 		CD957CAA0D876299005E8A40 /* Fallback.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD957CA90D876299005E8A40 /* Fallback.xml */; };
+		CD9586F112B62A4E00B8F567 /* all@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586D812B62A4E00B8F567 /* all@2x.png */; };
+		CD9586F212B62A4E00B8F567 /* bluray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586D912B62A4E00B8F567 /* bluray@2x.png */; };
+		CD9586F312B62A4E00B8F567 /* blurayall.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DA12B62A4E00B8F567 /* blurayall.png */; };
+		CD9586F412B62A4E00B8F567 /* blurayall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DB12B62A4E00B8F567 /* blurayall@2x.png */; };
+		CD9586F512B62A4E00B8F567 /* blurayb.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DC12B62A4E00B8F567 /* blurayb.png */; };
+		CD9586F612B62A4E00B8F567 /* blurayb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DD12B62A4E00B8F567 /* blurayb@2x.png */; };
+		CD9586F712B62A4E00B8F567 /* blurayc.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DE12B62A4E00B8F567 /* blurayc.png */; };
+		CD9586F812B62A4E00B8F567 /* blurayc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586DF12B62A4E00B8F567 /* blurayc@2x.png */; };
+		CD9586F912B62A4E00B8F567 /* dvd0.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E012B62A4E00B8F567 /* dvd0.png */; };
+		CD9586FA12B62A4E00B8F567 /* dvd0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E112B62A4E00B8F567 /* dvd0@2x.png */; };
+		CD9586FB12B62A4E00B8F567 /* dvd1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E212B62A4E00B8F567 /* dvd1@2x.png */; };
+		CD9586FC12B62A4E00B8F567 /* dvd2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E312B62A4E00B8F567 /* dvd2@2x.png */; };
+		CD9586FD12B62A4E00B8F567 /* dvd3.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E412B62A4E00B8F567 /* dvd3.png */; };
+		CD9586FE12B62A4E00B8F567 /* dvd3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E512B62A4E00B8F567 /* dvd3@2x.png */; };
+		CD9586FF12B62A4E00B8F567 /* dvd4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E612B62A4E00B8F567 /* dvd4@2x.png */; };
+		CD95870012B62A4E00B8F567 /* dvd5.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E712B62A4E00B8F567 /* dvd5.png */; };
+		CD95870112B62A4E00B8F567 /* dvd5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E812B62A4E00B8F567 /* dvd5@2x.png */; };
+		CD95870212B62A4E00B8F567 /* dvd6.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586E912B62A4E00B8F567 /* dvd6.png */; };
+		CD95870312B62A4E00B8F567 /* dvd6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586EA12B62A4E00B8F567 /* dvd6@2x.png */; };
+		CD95870412B62A4E00B8F567 /* dvd7.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586EB12B62A4E00B8F567 /* dvd7.png */; };
+		CD95870512B62A4E00B8F567 /* dvd7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586EC12B62A4E00B8F567 /* dvd7@2x.png */; };
+		CD95870612B62A4E00B8F567 /* dvd8.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586ED12B62A4E00B8F567 /* dvd8.png */; };
+		CD95870712B62A4E00B8F567 /* dvd8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586EE12B62A4E00B8F567 /* dvd8@2x.png */; };
+		CD95870812B62A4E00B8F567 /* dvdall.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586EF12B62A4E00B8F567 /* dvdall.png */; };
+		CD95870912B62A4E00B8F567 /* dvdall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9586F012B62A4E00B8F567 /* dvdall@2x.png */; };
 		CDA25CCF0F78C67000D148A3 /* Adhoc.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDA25CCE0F78C67000D148A3 /* Adhoc.plist */; };
+		CDB7288A12B631CD00715F6A /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB7288812B631CD00715F6A /* Icon-72.png */; };
+		CDB7288B12B631CD00715F6A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB7288912B631CD00715F6A /* Icon@2x.png */; };
+		CDB7289812B6347800715F6A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB7289712B6347800715F6A /* Default@2x.png */; };
 		CDB786660D8A817D00446A4C /* PersistStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB786650D8A817D00446A4C /* PersistStore.m */; };
 		CDD407610D94925D000AB92D /* UIViewControllerMoviesAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD407600D94925D000AB92D /* UIViewControllerMoviesAdditions.m */; };
 		CDE44DE00D8B1C2100AD527C /* SQLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE44DDC0D8B1C2100AD527C /* SQLDatabase.m */; };
@@ -131,7 +159,35 @@
 		CD957C6D0D875FDC005E8A40 /* XMLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLUtilities.m; sourceTree = "<group>"; };
 		CD957C860D8760E8005E8A40 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		CD957CA90D876299005E8A40 /* Fallback.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Fallback.xml; sourceTree = "<group>"; };
+		CD9586D812B62A4E00B8F567 /* all@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "all@2x.png"; sourceTree = "<group>"; };
+		CD9586D912B62A4E00B8F567 /* bluray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bluray@2x.png"; sourceTree = "<group>"; };
+		CD9586DA12B62A4E00B8F567 /* blurayall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurayall.png; sourceTree = "<group>"; };
+		CD9586DB12B62A4E00B8F567 /* blurayall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blurayall@2x.png"; sourceTree = "<group>"; };
+		CD9586DC12B62A4E00B8F567 /* blurayb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurayb.png; sourceTree = "<group>"; };
+		CD9586DD12B62A4E00B8F567 /* blurayb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blurayb@2x.png"; sourceTree = "<group>"; };
+		CD9586DE12B62A4E00B8F567 /* blurayc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurayc.png; sourceTree = "<group>"; };
+		CD9586DF12B62A4E00B8F567 /* blurayc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blurayc@2x.png"; sourceTree = "<group>"; };
+		CD9586E012B62A4E00B8F567 /* dvd0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd0.png; sourceTree = "<group>"; };
+		CD9586E112B62A4E00B8F567 /* dvd0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd0@2x.png"; sourceTree = "<group>"; };
+		CD9586E212B62A4E00B8F567 /* dvd1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd1@2x.png"; sourceTree = "<group>"; };
+		CD9586E312B62A4E00B8F567 /* dvd2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd2@2x.png"; sourceTree = "<group>"; };
+		CD9586E412B62A4E00B8F567 /* dvd3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd3.png; sourceTree = "<group>"; };
+		CD9586E512B62A4E00B8F567 /* dvd3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd3@2x.png"; sourceTree = "<group>"; };
+		CD9586E612B62A4E00B8F567 /* dvd4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd4@2x.png"; sourceTree = "<group>"; };
+		CD9586E712B62A4E00B8F567 /* dvd5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd5.png; sourceTree = "<group>"; };
+		CD9586E812B62A4E00B8F567 /* dvd5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd5@2x.png"; sourceTree = "<group>"; };
+		CD9586E912B62A4E00B8F567 /* dvd6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd6.png; sourceTree = "<group>"; };
+		CD9586EA12B62A4E00B8F567 /* dvd6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd6@2x.png"; sourceTree = "<group>"; };
+		CD9586EB12B62A4E00B8F567 /* dvd7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd7.png; sourceTree = "<group>"; };
+		CD9586EC12B62A4E00B8F567 /* dvd7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd7@2x.png"; sourceTree = "<group>"; };
+		CD9586ED12B62A4E00B8F567 /* dvd8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd8.png; sourceTree = "<group>"; };
+		CD9586EE12B62A4E00B8F567 /* dvd8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvd8@2x.png"; sourceTree = "<group>"; };
+		CD9586EF12B62A4E00B8F567 /* dvdall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvdall.png; sourceTree = "<group>"; };
+		CD9586F012B62A4E00B8F567 /* dvdall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dvdall@2x.png"; sourceTree = "<group>"; };
 		CDA25CCE0F78C67000D148A3 /* Adhoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Adhoc.plist; sourceTree = "<group>"; };
+		CDB7288812B631CD00715F6A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CDB7288912B631CD00715F6A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CDB7289712B6347800715F6A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CDB786640D8A817D00446A4C /* PersistStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistStore.h; sourceTree = "<group>"; };
 		CDB786650D8A817D00446A4C /* PersistStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistStore.m; sourceTree = "<group>"; };
 		CDD4075F0D94925D000AB92D /* UIViewControllerMoviesAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerMoviesAdditions.h; sourceTree = "<group>"; };
@@ -313,6 +369,31 @@
 		CD957B7B0D870F9B005E8A40 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CD9586D812B62A4E00B8F567 /* all@2x.png */,
+				CD9586D912B62A4E00B8F567 /* bluray@2x.png */,
+				CD9586DA12B62A4E00B8F567 /* blurayall.png */,
+				CD9586DB12B62A4E00B8F567 /* blurayall@2x.png */,
+				CD9586DC12B62A4E00B8F567 /* blurayb.png */,
+				CD9586DD12B62A4E00B8F567 /* blurayb@2x.png */,
+				CD9586DE12B62A4E00B8F567 /* blurayc.png */,
+				CD9586DF12B62A4E00B8F567 /* blurayc@2x.png */,
+				CD9586E012B62A4E00B8F567 /* dvd0.png */,
+				CD9586E112B62A4E00B8F567 /* dvd0@2x.png */,
+				CD9586E212B62A4E00B8F567 /* dvd1@2x.png */,
+				CD9586E312B62A4E00B8F567 /* dvd2@2x.png */,
+				CD9586E412B62A4E00B8F567 /* dvd3.png */,
+				CD9586E512B62A4E00B8F567 /* dvd3@2x.png */,
+				CD9586E612B62A4E00B8F567 /* dvd4@2x.png */,
+				CD9586E712B62A4E00B8F567 /* dvd5.png */,
+				CD9586E812B62A4E00B8F567 /* dvd5@2x.png */,
+				CD9586E912B62A4E00B8F567 /* dvd6.png */,
+				CD9586EA12B62A4E00B8F567 /* dvd6@2x.png */,
+				CD9586EB12B62A4E00B8F567 /* dvd7.png */,
+				CD9586EC12B62A4E00B8F567 /* dvd7@2x.png */,
+				CD9586ED12B62A4E00B8F567 /* dvd8.png */,
+				CD9586EE12B62A4E00B8F567 /* dvd8@2x.png */,
+				CD9586EF12B62A4E00B8F567 /* dvdall.png */,
+				CD9586F012B62A4E00B8F567 /* dvdall@2x.png */,
 				CD957C200D874D68005E8A40 /* all.png */,
 				CD957BF30D874809005E8A40 /* nothing.png */,
 				CD957B730D870F62005E8A40 /* dvd1.png */,
@@ -320,7 +401,10 @@
 				CD957B750D870F62005E8A40 /* bluray.png */,
 				CD957B760D870F62005E8A40 /* dvd2.png */,
 				CD1D9CD80D85FB7500A15439 /* Icon.png */,
+				CDB7288812B631CD00715F6A /* Icon-72.png */,
+				CDB7288912B631CD00715F6A /* Icon@2x.png */,
 				CD1D9CD40D85FB4600A15439 /* Default.png */,
+				CDB7289712B6347800715F6A /* Default@2x.png */,
 			);
 			name = Images;
 			path = ../Images;
@@ -433,6 +517,34 @@
 				CDE44DE40D8B1C2D00AD527C /* SQLDatabase-License.pdf in Resources */,
 				CD69F9990E54EFF500BC6DAE /* dist.plist in Resources */,
 				CDA25CCF0F78C67000D148A3 /* Adhoc.plist in Resources */,
+				CD9586F112B62A4E00B8F567 /* all@2x.png in Resources */,
+				CD9586F212B62A4E00B8F567 /* bluray@2x.png in Resources */,
+				CD9586F312B62A4E00B8F567 /* blurayall.png in Resources */,
+				CD9586F412B62A4E00B8F567 /* blurayall@2x.png in Resources */,
+				CD9586F512B62A4E00B8F567 /* blurayb.png in Resources */,
+				CD9586F612B62A4E00B8F567 /* blurayb@2x.png in Resources */,
+				CD9586F712B62A4E00B8F567 /* blurayc.png in Resources */,
+				CD9586F812B62A4E00B8F567 /* blurayc@2x.png in Resources */,
+				CD9586F912B62A4E00B8F567 /* dvd0.png in Resources */,
+				CD9586FA12B62A4E00B8F567 /* dvd0@2x.png in Resources */,
+				CD9586FB12B62A4E00B8F567 /* dvd1@2x.png in Resources */,
+				CD9586FC12B62A4E00B8F567 /* dvd2@2x.png in Resources */,
+				CD9586FD12B62A4E00B8F567 /* dvd3.png in Resources */,
+				CD9586FE12B62A4E00B8F567 /* dvd3@2x.png in Resources */,
+				CD9586FF12B62A4E00B8F567 /* dvd4@2x.png in Resources */,
+				CD95870012B62A4E00B8F567 /* dvd5.png in Resources */,
+				CD95870112B62A4E00B8F567 /* dvd5@2x.png in Resources */,
+				CD95870212B62A4E00B8F567 /* dvd6.png in Resources */,
+				CD95870312B62A4E00B8F567 /* dvd6@2x.png in Resources */,
+				CD95870412B62A4E00B8F567 /* dvd7.png in Resources */,
+				CD95870512B62A4E00B8F567 /* dvd7@2x.png in Resources */,
+				CD95870612B62A4E00B8F567 /* dvd8.png in Resources */,
+				CD95870712B62A4E00B8F567 /* dvd8@2x.png in Resources */,
+				CD95870812B62A4E00B8F567 /* dvdall.png in Resources */,
+				CD95870912B62A4E00B8F567 /* dvdall@2x.png in Resources */,
+				CDB7288A12B631CD00715F6A /* Icon-72.png in Resources */,
+				CDB7288B12B631CD00715F6A /* Icon@2x.png in Resources */,
+				CDB7289812B6347800715F6A /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,14 +625,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick F Quinn-Graham";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Patrick F Quinn-Graham (3Z9N73PP5Z)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92067310-BDDD-4209-9B4C-D0690A47898F";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -532,7 +645,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "847E5ABC-A2C6-4536-8F73-483A0F39D944";
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
@@ -545,7 +658,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6E794E56-5245-4679-9407-AF58C3D73F4D";
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Distribution;
 		};

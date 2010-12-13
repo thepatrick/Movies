@@ -188,9 +188,9 @@
 		//cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
 	
-	cell.textColor = [UIColor darkGrayColor];
-	cell.font = [UIFont systemFontOfSize:16];
-	cell.text = title;
+	cell.textLabel.textColor = [UIColor darkGrayColor];
+	cell.textLabel.font = [UIFont systemFontOfSize:16];
+	cell.textLabel.text = title;
 		
 	CGRect	frame =  CGRectMake(92, 12, 200, 20);
 	
